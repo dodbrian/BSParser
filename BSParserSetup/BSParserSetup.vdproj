@@ -39,6 +39,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_B9F7BE6C7DF64EF8A17EDF46E132C226"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_7640A2C9666240AA865654BC81DC5B2E"
         "MsmSig" = "8:_UNDEFINED"
@@ -46,13 +52,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4F7394967606EE3451C58D76EDB77358"
+        "OwnerKey" = "8:_048237717EE4BA43EBB83B85663F1118"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_048237717EE4BA43EBB83B85663F1118"
+        "OwnerKey" = "8:_4F7394967606EE3451C58D76EDB77358"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -237,6 +243,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B9F7BE6C7DF64EF8A17EDF46E132C226"
+            {
+            "SourcePath" = "8:..\\BSForms\\Abacus.ico"
+            "TargetName" = "8:Abacus.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_2D94AF83B43441D8A96806CDD4AC830F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
         }
         "FileType"
         {
@@ -342,7 +368,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:BSParser"
         "ProductCode" = "8:{7C4CD5A5-763A-4F1A-83C8-32CADF8FCA2E}"
-        "PackageCode" = "8:{7E146216-D833-46AB-B94E-8B0FA107B932}"
+        "PackageCode" = "8:{126930E1-CE8E-436B-859A-85525E7C2AE3}"
         "UpgradeCode" = "8:{89F429CD-70D4-4DDA-B606-D00CF1FCEF9B}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -462,18 +488,18 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_DF558A2C4A414150A0A7F74EA364DE39"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_607A6B68AA054BFAB8CA269347AE0932"
             {
             "Name" = "8:BSParser"
             "Arguments" = "8:"
-            "Description" = "8:Bank statement parser"
+            "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
             "Target" = "8:_7640A2C9666240AA865654BC81DC5B2E"
             "Folder" = "8:_2D94AF83B43441D8A96806CDD4AC830F"
             "WorkingFolder" = "8:_4670184F39CB41AF8AB1751F0350C735"
-            "Icon" = "8:"
+            "Icon" = "8:_B9F7BE6C7DF64EF8A17EDF46E132C226"
             "Feature" = "8:"
             }
         }
