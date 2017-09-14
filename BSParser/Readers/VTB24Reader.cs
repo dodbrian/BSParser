@@ -1,5 +1,5 @@
-using System;
 using BSParser.Data;
+using System;
 using System.IO;
 using System.Text;
 
@@ -37,11 +37,11 @@ namespace BSParser.Readers
                         return null;
 
                     var row = new StatementRow
-                        {
-                            RefNum = "",
-                            RegisteredOn = Convert.ToDateTime(columns[1]),
-                            DocNum = columns[2].Trim('"')
-                        };
+                    {
+                        RefNum = "",
+                        RegisteredOn = Convert.ToDateTime(columns[1]),
+                        DocNum = columns[2].Trim('"')
+                    };
 
                     if (_currencyDecimalSeparator != ".")
                     {

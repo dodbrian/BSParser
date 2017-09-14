@@ -1,7 +1,7 @@
-using System.Linq;
 using BSParser.Readers;
-using System.Collections.Generic;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace BSParser
 {
@@ -30,7 +30,7 @@ namespace BSParser
             if (Readers == null)
                 Init();
 
-            return Readers != null ? Readers.FirstOrDefault(reader => reader.Test(fileName)) : null;
+            return Readers?.FirstOrDefault(reader => reader.Test(fileName));
         }
     }
 }
