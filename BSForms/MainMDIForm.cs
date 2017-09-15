@@ -28,14 +28,24 @@ namespace BSForms
             form.Show(dockPanel1);
         }
 
-        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        private void OpenToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (openFileDialog1.ShowDialog() != DialogResult.OK) return;
 
-            var form = FormLoader.FindForm(openFileDialog1.FileName);
-            if (form != null)
+            try
             {
-                form.Show(dockPanel1);
+                var form = FormLoader.FindForm(openFileDialog1.FileName);
+
+                if (form != null)
+                {
+                    form.Show(dockPanel1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Unable to find form:" + Environment.NewLine + ex.Message, "Error", 
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
         }
 
