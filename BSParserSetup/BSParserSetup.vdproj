@@ -15,13 +15,13 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_048237717EE4BA43EBB83B85663F1118"
+        "MsmKey" = "8:_4F7394967606EE3451C58D76EDB77358"
         "OwnerKey" = "8:_7640A2C9666240AA865654BC81DC5B2E"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_4F7394967606EE3451C58D76EDB77358"
+        "MsmKey" = "8:_7629E4FE79034083F63C04D83DFEC803"
         "OwnerKey" = "8:_7640A2C9666240AA865654BC81DC5B2E"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -52,13 +52,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_048237717EE4BA43EBB83B85663F1118"
+        "OwnerKey" = "8:_4F7394967606EE3451C58D76EDB77358"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4F7394967606EE3451C58D76EDB77358"
+        "OwnerKey" = "8:_7629E4FE79034083F63C04D83DFEC803"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -161,20 +161,20 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_048237717EE4BA43EBB83B85663F1118"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4F7394967606EE3451C58D76EDB77358"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:BSParser, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:WeifenLuo.WinFormsUI.Docking, Version=3.0.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_048237717EE4BA43EBB83B85663F1118"
+                    "_4F7394967606EE3451C58D76EDB77358"
                     {
-                    "Name" = "8:BSParser.exe"
+                    "Name" = "8:WeifenLuo.WinFormsUI.Docking.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:BSParser.exe"
+            "SourcePath" = "8:WeifenLuo.WinFormsUI.Docking.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_4670184F39CB41AF8AB1751F0350C735"
@@ -192,20 +192,20 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4F7394967606EE3451C58D76EDB77358"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_7629E4FE79034083F63C04D83DFEC803"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:WeifenLuo.WinFormsUI.Docking, Version=3.0.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:BSParser, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_4F7394967606EE3451C58D76EDB77358"
+                    "_7629E4FE79034083F63C04D83DFEC803"
                     {
-                    "Name" = "8:WeifenLuo.WinFormsUI.Docking.dll"
+                    "Name" = "8:BSParser.exe"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:WeifenLuo.WinFormsUI.Docking.dll"
+            "SourcePath" = "8:BSParser.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_4670184F39CB41AF8AB1751F0350C735"
@@ -248,7 +248,7 @@
             "SourcePath" = "8:..\\BSForms\\Abacus.ico"
             "TargetName" = "8:Abacus.ico"
             "Tag" = "8:"
-            "Folder" = "8:_2D94AF83B43441D8A96806CDD4AC830F"
+            "Folder" = "8:_4670184F39CB41AF8AB1751F0350C735"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
