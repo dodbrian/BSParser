@@ -26,7 +26,18 @@ namespace BSForms
 
             if (saveFileDialog.ShowDialog() != DialogResult.OK) return;
 
-            var writer = new CSVWriter(saveFileDialog.FileName);
+            Writer writer = null;
+
+            switch (saveFileDialog.FilterIndex)
+            {
+                case 1:
+                    writer = new StrictCSVWriter(saveFileDialog.FileName);
+                    break;
+                case 2:
+                    writer = new CSVWriter(saveFileDialog.FileName);
+                    break;
+            }
+
             adapter.Export(writer);
         }
 

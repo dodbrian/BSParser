@@ -128,6 +128,7 @@
     <Compile Include="Readers\RosbankReader.cs" />
     <Compile Include="SourceChecker.cs" />
     <Compile Include="Writers\CSVWriter.cs" />
+    <Compile Include="Writers\StrictCSVWriter.cs" />
     <Compile Include="Writers\Writer.cs" />
     <Compile Include="Writers\XMLWriter.cs" />
   </ItemGroup>

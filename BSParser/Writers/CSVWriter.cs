@@ -114,7 +114,7 @@ namespace BSParser.Writers
 
         String CSVColumn(object obj)
         {
-            return obj.ToString() + ColumnSeparator;
+            return obj?.ToString() + ColumnSeparator;
         }
 
         String CSVColumn(object obj, bool last)
@@ -124,13 +124,13 @@ namespace BSParser.Writers
 
         String CSVTextColumn(object obj)
         {
-            return TextSeparator + obj.ToString() + TextSeparator + ColumnSeparator;
+            return TextSeparator + obj?.ToString() + TextSeparator + ColumnSeparator;
         }
 
         String CSVTextColumn(object obj, bool last)
         {
             if (last)
-                return TextSeparator + obj.ToString() + TextSeparator;
+                return TextSeparator + obj?.ToString() + TextSeparator;
             return CSVTextColumn(obj);
         }
     }
