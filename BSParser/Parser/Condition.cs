@@ -103,6 +103,8 @@ namespace BSParser.Parser
 
         public bool Check(String valueToCheck)
         {
+            if (valueToCheck == null) return false;
+
             switch (Operation)
             {
                 case Operation.Contains:

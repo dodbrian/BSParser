@@ -97,22 +97,23 @@ namespace BSParser.Readers
 
         override public bool Test(String fileName)
         {
-            var testStream = new StreamReader(fileName, Encoding.GetEncoding("windows-1251"));
-
-            var line = testStream.ReadLine();
-            if (line != null)
+            using (var testStream = new StreamReader(fileName, Encoding.GetEncoding(1251)))
             {
-                var testLine = line.Split(';');
-
-                if (testLine.Length == 11 && (testLine[0] == "“ËÔ"))
+                var line = testStream.ReadLine();
+                if (line != null)
                 {
-                    this.fileName = fileName;
-                    Init();
-                    return true;
-                }
-            }
+                    var testLine = line.Split(';');
 
-            return false;
+                    if (testLine.Length == 11 && (testLine[0] == "“ËÔ"))
+                    {
+                        this.fileName = fileName;
+                        Init();
+                        return true;
+                    }
+                }
+
+                return false;
+            }
         }
 
         public VTB24StatementReader()

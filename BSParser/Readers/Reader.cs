@@ -7,6 +7,7 @@ namespace BSParser.Readers
     {
         RosbankXML,
         VTB24,
+        VTB242017,
         Unknown
     }
 

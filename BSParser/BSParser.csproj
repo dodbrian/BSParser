@@ -60,6 +60,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CsvHelper, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
+      <HintPath>..\packages\CsvHelper.2.16.3.0\lib\net35\CsvHelper.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -112,11 +115,15 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Properties\app.manifest" />
     <Compile Include="Data\StatementRow.cs" />
     <Compile Include="Parser\Condition.cs" />
     <Compile Include="Parser\Parser.cs" />
     <Compile Include="Parser\Rule.cs" />
+    <Compile Include="Readers\VTB242017Reader.cs" />
+    <Compile Include="Readers\VTB242017Record.cs" />
+    <Compile Include="Readers\VTB242017RecordMap.cs" />
     <Compile Include="Readers\VTB24Reader.cs" />
     <Compile Include="Readers\RosbankReader.cs" />
     <Compile Include="SourceChecker.cs" />

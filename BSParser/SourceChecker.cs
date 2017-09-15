@@ -14,7 +14,8 @@ namespace BSParser
             Readers = new List<Reader>
                 {
                     new RosbankStatementReader(),
-                    new VTB24StatementReader()
+                    new VTB24StatementReader(),
+                    new VTB242017Reader()
                 };
 
             return true;
