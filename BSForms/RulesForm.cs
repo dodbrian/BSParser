@@ -1,7 +1,7 @@
-﻿using System;
+﻿using BSParser.Parser;
+using System;
 using System.Linq;
 using System.Windows.Forms;
-using BSParser.Parser;
 using WeifenLuo.WinFormsUI.Docking;
 
 namespace BSForms
@@ -30,11 +30,11 @@ namespace BSForms
             if (form.ShowDialog() == DialogResult.OK)
             {
                 var rule = new Rule
-                    {
-                        ValueIfTrue = form.CategoryTextBox.Text,
-                        Conditions = form.Conditions,
-                        Name = form.NameTextBox.Text
-                    };
+                {
+                    ValueIfTrue = form.CategoryTextBox.Text,
+                    Conditions = form.Conditions,
+                    Name = form.NameTextBox.Text
+                };
                 _rules.Add(rule);
             }
 
@@ -66,11 +66,11 @@ namespace BSForms
             var rule = (Rule)ruleListBindingSource.Current;
 
             var form = new RuleConditionsForm
-                {
-                    Conditions = rule.Conditions,
-                    CategoryTextBox = { Text = rule.ValueIfTrue },
-                    NameTextBox = { Text = rule.Name }
-                };
+            {
+                Conditions = rule.Conditions,
+                CategoryTextBox = { Text = rule.ValueIfTrue },
+                NameTextBox = { Text = rule.Name }
+            };
 
             if (form.ShowDialog() != DialogResult.OK) return;
 
@@ -89,20 +89,20 @@ namespace BSForms
             list.AddRange(rule.Conditions.Select(cond => new Condition(cond.Field, cond.Operation, cond.TestValue)));
 
             var form = new RuleConditionsForm
-                {
-                    Conditions = list,
-                    CategoryTextBox = { Text = rule.ValueIfTrue },
-                    NameTextBox = { Text = rule.Name }
-                };
+            {
+                Conditions = list,
+                CategoryTextBox = { Text = rule.ValueIfTrue },
+                NameTextBox = { Text = rule.Name }
+            };
 
             if (form.ShowDialog() != DialogResult.OK) return;
-            
+
             var newRule = new Rule
-                {
-                    ValueIfTrue = form.CategoryTextBox.Text,
-                    Conditions = form.Conditions,
-                    Name = form.NameTextBox.Text
-                };
+            {
+                ValueIfTrue = form.CategoryTextBox.Text,
+                Conditions = form.Conditions,
+                Name = form.NameTextBox.Text
+            };
 
             _rules.Add(newRule);
             ruleListBindingSource.ResetBindings(false);

@@ -49,7 +49,17 @@ namespace BSForms
         public void Parse()
         {
             var parser = new BSParser.Parser.Parser();
-            parser.LoadRules(Config.GetRulesFileName());
+
+            try
+            {
+                parser.LoadRules(Config.GetRulesFileName());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading rules:" + Environment.NewLine + ex.Message, "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             parser.Parse(adapter.GetTransactions());
             dataGridView1.Refresh();
