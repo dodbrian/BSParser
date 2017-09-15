@@ -11,9 +11,25 @@ namespace BSForms
 {
     public partial class StatementForm : DockContent
     {
-        String fileName;
+        private String fileName;
 
-        Adapter adapter;
+        private Adapter adapter;
+
+        private void ParseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Parse();
+        }
+
+        private void ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (adapter.GetTransactions().Count <= 0) return;
+
+            if (saveFileDialog.ShowDialog() != DialogResult.OK) return;
+
+            var writer = new CSVWriter(saveFileDialog.FileName);
+            adapter.Export(writer);
+        }
+
         public Adapter Adapter
         {
             get { return adapter; }
@@ -63,19 +79,6 @@ namespace BSForms
 
             parser.Parse(adapter.GetTransactions());
             dataGridView1.Refresh();
-        }
-
-        private void parseToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Parse();
-        }
-
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            if (adapter.GetTransactions().Count <= 0) return;
-            if (saveFileDialog1.ShowDialog() != DialogResult.OK) return;
-            var writer = new CSVWriter(saveFileDialog1.FileName);
-            adapter.Export(writer);
         }
     }
 }
