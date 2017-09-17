@@ -41,11 +41,15 @@ namespace BSForms
                     form.Show(dockPanel1);
                 }
             }
+            catch(UnknownFormatException ex)
+            {
+                MessageBox.Show("Unable to detect file format:" + Environment.NewLine + ex.Message, "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             catch (Exception ex)
             {
                 MessageBox.Show("Unable to find form:" + Environment.NewLine + ex.Message, "Error", 
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
             }
         }
 

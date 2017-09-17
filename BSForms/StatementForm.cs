@@ -66,7 +66,7 @@ namespace BSForms
 
             using (var reader = checker.Detect(fileName))
             {
-                if (reader == null) return;
+                if (reader == null) throw new UnknownFormatException(fileName);
                 adapter = new Adapter();
                 adapter.Load(reader);
                 dataGridView1.DataSource = adapter.GetTransactions();
