@@ -31,9 +31,12 @@ namespace BSForms
             switch (saveFileDialog.FilterIndex)
             {
                 case 1:
-                    writer = new StrictCSVWriter(saveFileDialog.FileName);
+                    writer = new XLSXWriter(saveFileDialog.FileName);
                     break;
                 case 2:
+                    writer = new StrictCSVWriter(saveFileDialog.FileName);
+                    break;
+                case 3:
                     writer = new CSVWriter(saveFileDialog.FileName);
                     break;
             }

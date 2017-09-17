@@ -114,7 +114,7 @@
             // saveFileDialog
             // 
             this.saveFileDialog.DefaultExt = "csv";
-            this.saveFileDialog.Filter = "CSV files|*.csv|Old CSV files|*.csv";
+            this.saveFileDialog.Filter = "XLSX files|*.xlsx|CSV files|*.csv|Old CSV files|*.csv";
             // 
             // StatementForm
             // 

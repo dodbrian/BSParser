@@ -143,6 +143,7 @@
     <Compile Include="Writers\CSVWriter.cs" />
     <Compile Include="Writers\StrictCSVWriter.cs" />
     <Compile Include="Writers\Writer.cs" />
+    <Compile Include="Writers\XLSXWriter.cs" />
     <Compile Include="Writers\XMLWriter.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
