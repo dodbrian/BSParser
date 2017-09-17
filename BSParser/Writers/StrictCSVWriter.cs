@@ -1,6 +1,7 @@
 ﻿using BSParser.Data;
 using CsvHelper;
 using System.IO;
+using System.Linq;
 using System.Text;
 
 namespace BSParser.Writers
@@ -16,11 +17,28 @@ namespace BSParser.Writers
 
         public override bool Write(StatementTable data)
         {
+            if (!data.Any()) return false;
+
+            var orderedData = data.Select(x => new
+            {
+                x.Category,
+                x.RefNum,
+                x.DocNum,
+                x.Amount,
+                x.Direction,
+                x.RegisteredOn,
+                x.Description,
+                x.PayerINN,
+                x.PayerName,
+                x.ReceiverINN,
+                x.ReceiverName
+            });
+
             using (var sw = new StreamWriter(_fileName, false, Encoding.UTF8))
             {
                 var csv = new CsvWriter(sw);
                 csv.Configuration.Delimiter = ";";
-                csv.WriteRecords(data);
+                csv.WriteRecords(orderedData);
             }
 
             return true;
