@@ -15,19 +15,25 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_4F7394967606EE3451C58D76EDB77358"
-        "OwnerKey" = "8:_7640A2C9666240AA865654BC81DC5B2E"
+        "MsmKey" = "8:_048237717EE4BA43EBB83B85663F1118"
+        "OwnerKey" = "8:_96E999248CBA4B9E9A962AFC0002A55C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_7629E4FE79034083F63C04D83DFEC803"
-        "OwnerKey" = "8:_7640A2C9666240AA865654BC81DC5B2E"
+        "MsmKey" = "8:_94D2C99CD2F910F70A4760663F016F80"
+        "OwnerKey" = "8:_048237717EE4BA43EBB83B85663F1118"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_7640A2C9666240AA865654BC81DC5B2E"
+        "MsmKey" = "8:_94D2C99CD2F910F70A4760663F016F80"
+        "OwnerKey" = "8:_96E999248CBA4B9E9A962AFC0002A55C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_96E999248CBA4B9E9A962AFC0002A55C"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -39,6 +45,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_ABD051C7B5BE105F2F8F57E254D6C804"
+        "OwnerKey" = "8:_96E999248CBA4B9E9A962AFC0002A55C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_B9F7BE6C7DF64EF8A17EDF46E132C226"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -46,19 +58,25 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_7640A2C9666240AA865654BC81DC5B2E"
+        "OwnerKey" = "8:_96E999248CBA4B9E9A962AFC0002A55C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4F7394967606EE3451C58D76EDB77358"
+        "OwnerKey" = "8:_048237717EE4BA43EBB83B85663F1118"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_7629E4FE79034083F63C04D83DFEC803"
+        "OwnerKey" = "8:_ABD051C7B5BE105F2F8F57E254D6C804"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_94D2C99CD2F910F70A4760663F016F80"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -88,15 +106,10 @@
             "ComponentsUrl" = "8:"
                 "Items"
                 {
-                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Net.Framework.3.5.SP1"
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.5.2"
                     {
-                    "Name" = "8:.NET Framework 3.5 SP1"
-                    "ProductCode" = "8:Microsoft.Net.Framework.3.5.SP1"
-                    }
-                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Windows.Installer.3.1"
-                    {
-                    "Name" = "8:Windows Installer 3.1"
-                    "ProductCode" = "8:Microsoft.Windows.Installer.3.1"
+                    "Name" = "8:Microsoft .NET Framework 4.5.2 (x86 и x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.5.2"
                     }
                 }
             }
@@ -161,20 +174,20 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4F7394967606EE3451C58D76EDB77358"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_048237717EE4BA43EBB83B85663F1118"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:WeifenLuo.WinFormsUI.Docking, Version=3.0.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:BSParser, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_4F7394967606EE3451C58D76EDB77358"
+                    "_048237717EE4BA43EBB83B85663F1118"
                     {
-                    "Name" = "8:WeifenLuo.WinFormsUI.Docking.dll"
+                    "Name" = "8:BSParser.exe"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:WeifenLuo.WinFormsUI.Docking.dll"
+            "SourcePath" = "8:BSParser.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_4670184F39CB41AF8AB1751F0350C735"
@@ -192,20 +205,20 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_7629E4FE79034083F63C04D83DFEC803"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_94D2C99CD2F910F70A4760663F016F80"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:BSParser, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:CsvHelper, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_7629E4FE79034083F63C04D83DFEC803"
+                    "_94D2C99CD2F910F70A4760663F016F80"
                     {
-                    "Name" = "8:BSParser.exe"
+                    "Name" = "8:CsvHelper.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:BSParser.exe"
+            "SourcePath" = "8:CsvHelper.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_4670184F39CB41AF8AB1751F0350C735"
@@ -241,6 +254,37 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_ABD051C7B5BE105F2F8F57E254D6C804"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:WeifenLuo.WinFormsUI.Docking, Version=3.0.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_ABD051C7B5BE105F2F8F57E254D6C804"
+                    {
+                    "Name" = "8:WeifenLuo.WinFormsUI.Docking.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:WeifenLuo.WinFormsUI.Docking.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_4670184F39CB41AF8AB1751F0350C735"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B9F7BE6C7DF64EF8A17EDF46E132C226"
@@ -367,15 +411,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:BSParser"
-        "ProductCode" = "8:{7C4CD5A5-763A-4F1A-83C8-32CADF8FCA2E}"
-        "PackageCode" = "8:{126930E1-CE8E-436B-859A-85525E7C2AE3}"
+        "ProductCode" = "8:{31B48DBC-A346-4C3C-AE9D-047CE6D6D1A9}"
+        "PackageCode" = "8:{1FF856C2-D352-4B4F-BA7B-098991B12D66}"
         "UpgradeCode" = "8:{89F429CD-70D4-4DDA-B606-D00CF1FCEF9B}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
-        "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.1.3"
+        "InstallAllUsers" = "11:TRUE"
+        "ProductVersion" = "8:1.1.6"
         "Manufacturer" = "8:IdeaPrint"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -488,7 +532,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_607A6B68AA054BFAB8CA269347AE0932"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_898D68D5BCA24211A2AF9A76D797BEA9"
             {
             "Name" = "8:BSParser"
             "Arguments" = "8:"
@@ -496,7 +540,7 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_7640A2C9666240AA865654BC81DC5B2E"
+            "Target" = "8:_96E999248CBA4B9E9A962AFC0002A55C"
             "Folder" = "8:_2D94AF83B43441D8A96806CDD4AC830F"
             "WorkingFolder" = "8:_4670184F39CB41AF8AB1751F0350C735"
             "Icon" = "8:_B9F7BE6C7DF64EF8A17EDF46E132C226"
@@ -901,7 +945,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_7640A2C9666240AA865654BC81DC5B2E"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_96E999248CBA4B9E9A962AFC0002A55C"
             {
             "SourcePath" = "8:..\\BSForms\\obj\\Release\\BSForms.exe"
             "TargetName" = "8:"
@@ -921,7 +965,7 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             "ProjectOutputGroupRegister" = "3:1"
-            "OutputConfiguration" = "8:Release|Any CPU"
+            "OutputConfiguration" = "8:"
             "OutputGroupCanonicalName" = "8:Built"
             "OutputProjectGuid" = "8:{3372E3C4-97F8-4E2B-A256-BD21EBF99450}"
             "ShowKeyOutput" = "11:TRUE"
